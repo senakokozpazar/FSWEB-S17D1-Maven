@@ -24,6 +24,7 @@ public class AnimalController {
     @GetMapping
     public List<Animal> getAnimals() {
         return animals.values().stream().toList();
+
     }
 
     @GetMapping("/{id}")
