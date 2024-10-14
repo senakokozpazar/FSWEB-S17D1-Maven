@@ -35,6 +35,7 @@ public class AnimalController {
     public Animal addAnimal(@RequestBody Animal animal) {
         animals.put(animal.getId(), animal);
         return animal;
+
     }
 
     @PutMapping("/{id}")
